@@ -17,4 +17,4 @@ rules = apriori(transactions, min_support = 0.003, min_confidence = 0.2, min_lif
 results = list(rules)
 results_list = []
 for i in range(0,len(results)):
-    results_list.append('RULE:\t' + str(results[i][0]).replace("frozenset(","") + '\n SUPPORT:\t'  + str(results[i][1]) + '\nCONF:\t' + str(results[i][2][0][2]) + '\nLIFT\t'+str(results[i][2][0][3]) )
+    results_list.append('RULE:\t' + str(results[i][0]).replace("frozenset(","")  + '\n SUPPORT:\t'  + str(results[i][1]) + '\nCONF:\t' + str(results[i][2][0][2]) + '\nLIFT\t'+str(results[i][2][0][3]) )
